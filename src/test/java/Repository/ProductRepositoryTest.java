@@ -63,7 +63,6 @@ public class ProductRepositoryTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-
     @Test
     public void searchIfOneItemFits() {
         manager.add(product1);
@@ -100,7 +99,6 @@ public class ProductRepositoryTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
-
     @Test
     public void checkRemoveByIdMethodExistingElement() {
         repo.save(product1);
@@ -127,11 +125,8 @@ public class ProductRepositoryTest {
        Assertions.assertThrows(NotFoundException.class, () -> {
            repo.removeById(product4.getId());
                });
-
-
-
-
     }
+
 }
 
 
