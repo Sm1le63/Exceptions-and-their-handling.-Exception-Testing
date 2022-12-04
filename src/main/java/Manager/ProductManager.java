@@ -1,4 +1,5 @@
 package Manager;
+
 import Inheritance.and.extensibility.of.systems.Product;
 import Repository.ProductRepository;
 
@@ -7,10 +8,10 @@ public class ProductManager {
 
 
     public ProductManager(ProductRepository repo) {
-    this.repo = repo;
+        this.repo = repo;
     }
 
-    public void add(Product product){
+    public void add(Product product) {
         repo.save(product);
     }
 

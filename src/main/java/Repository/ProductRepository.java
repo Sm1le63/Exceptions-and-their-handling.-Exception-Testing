@@ -31,20 +31,20 @@ public class ProductRepository {
     }
 
 
-        public Product[] getProducts () {                      // Получить продукты
-            return products;
-
-        }
-
-        public Product findById ( int id){                    // Найти по идентификатору
-            for (Product product : products) {
-                if (product.getId() == id) {
-                    return product;
-                }
-            }
-            return null;
-        }
-
+    public Product[] getProducts() {                      // Получить продукты
+        return products;
 
     }
+
+    public Product findById(int id) {                    // Найти по идентификатору
+        for (Product product : products) {
+            if (product.getId() == id) {
+                return product;
+            }
+        }
+        return null;
+    }
+
+
+}
 

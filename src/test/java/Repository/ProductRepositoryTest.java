@@ -122,9 +122,9 @@ public class ProductRepositoryTest {
         repo.save(product1);
         repo.save(product2);
 
-       Assertions.assertThrows(NotFoundException.class, () -> {
-           repo.removeById(product4.getId());
-               });
+        Assertions.assertThrows(NotFoundException.class, () -> {
+            repo.removeById(product4.getId());
+        });
     }
 
 }
